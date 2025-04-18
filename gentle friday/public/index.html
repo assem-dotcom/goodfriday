@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenny the Lamb's Gentle Friday</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lenny the Lamb's Gentle Friday</h1>
+            <div class="lenny-intro">
+                <img src="assets/lenny.svg" alt="Lenny the Lamb" id="lenny" class="lenny-image">
+                <p class="lenny-speech">Hi! Today's a special day. Wanna learn why?</p>
+            </div>
+        </header>
+
+        <main>
+            <section id="storybook" class="feature-section">
+                <h2>📖 Lenny's Storybook</h2>
+                <div class="story-container">
+                    <!-- Story content will be dynamically loaded -->
+                </div>
+            </section>
+
+            <section id="candles" class="feature-section">
+                <h2>🕯️ Virtual Candle Lighting</h2>
+                <div class="candles-container">
+                    <!-- Candles will be dynamically added -->
+                </div>
+            </section>
+
+            <section id="kindness" class="feature-section">
+                <h2>🌱 Kindness Quest</h2>
+                <div class="kindness-container">
+                    <div class="drawing-area" id="drawing-area">
+                        <p>Draw a heart for someone special!</p>
+                        <canvas id="heart-canvas"></canvas>
+                        <div class="drawing-controls">
+                            <button id="clear-canvas">Clear</button>
+                            <button id="save-heart">Save Heart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="minigame" class="feature-section">
+                <h2>✝️ Help Lenny Carry the Cross</h2>
+                <div class="game-container">
+                    <canvas id="game-canvas"></canvas>
+                </div>
+            </section>
+
+            <section id="gratitude" class="feature-section">
+                <h2>🌸 Gratitude Garden</h2>
+                <div class="garden-container">
+                    <input type="text" id="gratitude-input" placeholder="What are you thankful for?">
+                    <button id="plant-flower">Plant a Flower</button>
+                    <div class="flowers-container">
+                        <!-- Flowers will be dynamically added -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Remember: Love is stronger than anything. Even thorns!</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

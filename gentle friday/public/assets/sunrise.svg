@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Sky gradient -->
+    <defs>
+        <linearGradient id="skyGradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#FFD700"/>
+            <stop offset="100%" stop-color="#E8F5FF"/>
+        </linearGradient>
+    </defs>
+    <rect width="400" height="300" fill="url(#skyGradient)"/>
+    
+    <!-- Sun -->
+    <circle cx="200" cy="100" r="50" fill="#FFD700"/>
+    
+    <!-- Sun rays -->
+    <g stroke="#FFD700" stroke-width="3">
+        <line x1="200" y1="30" x2="200" y2="50"/>
+        <line x1="250" y1="70" x2="270" y2="50"/>
+        <line x1="300" y1="100" x2="320" y2="100"/>
+        <line x1="250" y1="130" x2="270" y2="150"/>
+        <line x1="200" y1="150" x2="200" y2="170"/>
+        <line x1="150" y1="130" x2="130" y2="150"/>
+        <line x1="100" y1="100" x2="80" y2="100"/>
+        <line x1="150" y1="70" x2="130" y2="50"/>
+    </g>
+    
+    <!-- Hills -->
+    <path d="M0 200 Q100 150 200 200 Q300 250 400 200 L400 300 L0 300 Z" fill="#A5D6A7"/>
+    
+    <!-- Flowers -->
+    <g fill="#FFB6C1">
+        <circle cx="50" cy="220" r="5"/>
+        <circle cx="150" cy="230" r="5"/>
+        <circle cx="250" cy="220" r="5"/>
+        <circle cx="350" cy="230" r="5"/>
+    </g>
+</svg> 

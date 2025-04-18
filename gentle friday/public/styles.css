@@ -1,0 +1,258 @@
+:root {
+    --color-primary: #6B8CFF;
+    --color-secondary: #FFB6C1;
+    --color-accent: #FFD700;
+    --color-background: #F5F5F5;
+    --color-text: #333333;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.lenny-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.lenny-image {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+
+.lenny-image:hover {
+    transform: scale(1.05);
+}
+
+.lenny-speech {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px var(--color-shadow);
+    max-width: 300px;
+    position: relative;
+}
+
+.feature-section {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px var(--color-shadow);
+}
+
+h2 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+/* Storybook Styles */
+.story-container {
+    min-height: 200px;
+    padding: 1rem;
+    background-color: #FFF8E7;
+    border-radius: 0.5rem;
+}
+
+/* Candle Lighting Styles */
+.candles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.candle {
+    width: 60px;
+    height: 100px;
+    background-color: #FFF;
+    border-radius: 0.5rem;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.candle:hover {
+    transform: translateY(-5px);
+}
+
+/* Kindness Quest Styles */
+.kindness-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+button {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-secondary);
+}
+
+input {
+    padding: 0.8rem;
+    border: 1px solid var(--color-shadow);
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Mini-Game Styles */
+.game-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#game-canvas {
+    width: 100%;
+    height: 300px;
+    background-color: #E8F5FF;
+    border-radius: 0.5rem;
+}
+
+/* Gratitude Garden Styles */
+.garden-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.flowers-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    min-height: 200px;
+    padding: 1rem;
+    background-color: #F0FFF0;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    color: var(--color-primary);
+}
+
+/* Animations */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.lenny-image {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .feature-section {
+        padding: 1rem;
+    }
+}
+
+/* Drawing Area Styles */
+.drawing-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #FFF8E7;
+    border-radius: 0.5rem;
+}
+
+#heart-canvas {
+    border: 2px solid #FFB6C1;
+    border-radius: 0.5rem;
+    background-color: white;
+    cursor: crosshair;
+}
+
+.drawing-controls {
+    display: flex;
+    gap: 1rem;
+}
+
+.drawing-controls button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* Hearts Gallery Styles */
+.hearts-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #FFF8E7;
+    border-radius: 0.5rem;
+}
+
+.heart-container {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px var(--color-shadow);
+}
+
+.heart-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+} 
